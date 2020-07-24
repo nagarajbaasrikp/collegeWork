@@ -20,6 +20,28 @@
     height: 90vh;
 }
 
+ul.navbar {
+    margin: 20px 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+ul.navbar li, ul.navbar li a {
+    width: 20%;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+ul.navbar li:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 1s;
+}
+
 div.links {
     width: 60vw;
 }
