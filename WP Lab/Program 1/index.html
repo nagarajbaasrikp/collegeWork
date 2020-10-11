@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Program 1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+        <div class="gender">
+            <label for="gender">Gender</label>
+            <input type="radio" name="male" id="male">Male</input>
+            <input type="radio" name="female" id="female">Female</input>
+            <input type="radio" name="other" id="other">Others</input>
+        </div>
+        <div class="hobbies">
+            <p>Hobbies</p>
+            <input type="checkbox" name="game">Gaming</input>
+            <input type="checkbox" name="music">Music</input>
+            <input type="checkbox" name="driving">Driving</input>
+            <input type="checkbox" name="reading">Reading</input>
+        </div>
+        <div class="qual">
+            <label for="select">Qualification</label>
+            <select name="select" id="select">
+                <optgroup>
+                    <option>Class X</option>
+                    <option>Class X II</option>
+                </optgroup>
+                <optgroup>
+                    <option>Bachelors</option>
+                    <option>Masters</option>
+                    <option>Higher</option>
+                </optgroup>
+            </select>
+        </div>
+        <input type="button" onclick="count()" value="Count Form Elements">
+        <button type="submit" onclick="alert('Submitted')">Submit</button>
+    </form>
+</body>
+</html>
