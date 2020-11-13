@@ -1,0 +1,16 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#date {
+    border: 1px solid black;
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}

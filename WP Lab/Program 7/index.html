@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab  Program 7</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <form id="form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="p_name">Parent's Name</label>
+        <input type="p_name" name="p_name" id="p_no">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone">
+        <div>
+            <input type="radio" name="gender" id="male">Male</input>
+            <input type="radio" name="gender" id="female">Female</input>
+            <input type="radio" name="gender" id="other">Other</input>
+        </div>
+        <hr/>
+        <p>Marks</p>
+        <label for="wp">Web Programming</label><input type="text" id="wp" name="wp" min="0" max="100" />
+        <label for="oops">OOPS Using C++</label><input type="text" id="oops" name="oops" min="0" max="100" />
+        <label for="dbms">DBMS</label><input type="text" id="dbms" name="dbms" min="0" max="100" />
+        <label for="se">Software Engnineering</label><input type="text" name="se" id="se" min="0" max="100" />
+        <label for="quali">Qualification</label>
+        <button type="button" id="calc" onclick="calculate()">Calculate Percentage</button>
+        <p id="total">Total:</p>
+        <p id="avg">Average:</p>
+        <p id="grade">Grade:</p>
+    </form>
+</body>
+</html>
