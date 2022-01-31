@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <noscript>Your Browser doesn't support javascript</noscript>
+    <title>Electronics Blog</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid clearfix">
+            <a class="navbar-brand float-left" href="index.html"><img class="img-fluid" src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown" id="myDropdown">
+                        <a class="nav-link dropdown-toggle" href="resources.html" data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="faq.html">FAQs</a></li>
+                            <li> <a class="dropdown-item" href="blog.html">Blogs</a></li>
+                            <li><a class="dropdown-item" href="webinar.html">Webinars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="freelance.html">Freelance Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signin.html">Sign-in/Sign-up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-md-8">
+                A Brief Introduction to Electronic Components<br />
+                Like how proteins are the building blocks of life, electronic components are the building blocks of electronic
+                products.
+                A PCB is the skeletal structure that is designed to compactly accommodate these components, hold them together,
+                and
+                establish robust interconnections to achieve the intended outputs.
+                Some of the most commonly used electronic components are resistors, capacitors, inductors, diodes, LEDs,
+                transistors,
+                ICs, and connectors. These components usually have leads/terminals and are available in specific standardized
+                packages
+                that the designer can choose to suit his application. SMT (Surface Mount Technology) and Through-hole are the
+                two types
+                of mounting techniques used to place components on a PCB.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                Resistors<br />
+                The resistor is a passive electrical component whose function is to introduce resistance to the flow of electric
+                current
+                in an electrical circuit to limit the current. The magnitude of the opposition to the flow of current is called
+                the
+                resistance of the resistor. A larger resistance value indicates a greater opposition to current flow. The
+                resistance is
+                measured in ohms (Ω), and its equation is as follows.
+                R=V/I
+                The voltage (V), current (I), and resistance (R) are related by Ohm’s law. i.e. V = IR. The higher the
+                resistance R, the
+                lower is the current I for a given voltage V across it. It is a linear device.
+                Resistors dissipate electrical energy given by P=I² R Watts or Joules/sec.
+                Resistors are made using different materials such as carbon film, metal film, etc. However, we will concentrate
+                on the
+                most common varieties and their attributes.
+                Resistors values vary from milliohms to Mega ohms and the tolerance of typical resistors varies from 1% to 5%.
+                However,
+                for precision resistor tolerance varies below 1% from 0.1% to 0.001% and hence they are more expensive and are
+                used in
+                analog circuits where precise/reference voltage is needed. Commonly used Resistor are available with maximum
+                power
+                rating of 1/8(0.125W), 1/4W (0.25W), 1/2W (0.5W), 1W, 5W. Based on the values and power ratings, SMD resistors
+                are made
+                in different sizes codes 1210, 1206, 0805, 0603, 0402, 0201. This also includes R-packs resistor network used
+                for pull
+                up /pull down for circuits interfaces.
+                Different types of resistors by Size and Form::
+                Through-hole resistors
+                Surface-mount resistors SMD/SMT.
+                Different types of resistors by Application::
+                Common resistor: used in current limiter, setting biases, voltage dividers, pull up, filtering, termination
+                resistors,
+                load resistors, etc.
+                Precision resistor for voltage feedback circuits, voltage references.
+                Current sense resistors
+                Power resistors
+                Resistor selection parameters::
+                While selecting any resistor in the circuit, the designer needs to consider the following parameters based on
+                the
+                application and real-estate available on the printed circuit board.
+                Resistance value(R),
+                Power (Wattages) dissipated across it,
+                Tolerance (+/- %)
+                Size based on available space on PCB.
+                Resistor Manufacturers: AVX, Rohm, Kemet, Vishay, Samsung, Panasonic TDK, Murata, etc.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                Inductors<br />
+                The Inductors (also called as a coil or choke) is a passive two-terminal electrical component that stores
+                magnetic
+                energy when an electric current is passed through it. It's an insulated wire wound into a coil around a core of
+                some
+                material (air, iron, powdered iron, or ferrite material) in a spiral form.
+                The inductor is denoted by inductance 'L' and the measuring unit is Henry (H). Inductors have values that
+                typically
+                range from 1 µH to 2000 mH.
+                When the time-varying current flows through an inductor, the magnetic field is created which induces an
+                electromotive
+                force (e.m.f.) (voltage) in the inductor. Voltage V, across an inductor of inductance L, is given by
+                V = L di/dt
+                That is, there is a voltage across the inductor only if the current through it is changing; DC produces no
+                voltage
+                through an inductor. In general, Inductor blocks the AC and passes the DC.
+                The energy stored in an inductor with value 'L' Henries Is given by;
+                E = 1/2 Li² Energy E is in Joules, and I is in Ampere.
+                An ideal inductor has zero resistance and zero capacitance. However, real inductors have a small value
+                resistance
+                associated with the winding of the coil and whenever current flows through it, energy is lost in the form of
+                heat.
+                >Application of inductors::
+                >In buck/boost power regulators.
+                >In filter circuits in DC power supplies.
+                >Isolating signals
+                >In transformer to step up/down the AC voltage level
+                >In oscillator and tuning circuits
+                >For generating voltage surges in fluorescent lamp sets.
+        
+                >Types of inductors
+                Inductors are mainly classified depending on the core material used and operating frequency. The following are
+                the
+                different types of inductors and available in through-hole as well as SMD package based on the construction.
+                Iron Cored Inductors
+                Air Cored Inductors
+                Powdered Iron Cored Inductors
+                Ferrite Cored Inductors
+                Variable Inductors
+                Audio Frequency Inductors
+                Radio Frequency Inductors
+        
+                Inductor Selection parameters
+                While selecting an inductor in any circuit user needs to take care of the following parameter apart from the
+                application/usage.
+                Inductance value
+                Tolerance
+                Maximum Current rating
+                Shielded and non-shielded
+                Size
+                Q ratings
+                Frequency range
+                The resistance of the inductor
+                Type of core used
+                Manufacturer: Murata, TDK, Bourns Inc., Abracon Electronics, AVX corporation, Schaffner, Signal Transformer,
+                etc.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                Diodes<br />
+                The diode is two terminal semiconductor devices that allow an electric current to pass in one direction while blocking
+                it in the reverse direction. The diode is made up of a semiconductor device with P-type material and N-type material.
+                Typical material used in a diode is silicon and germanium. They conduct when a minimum forward voltage (~ 0.7V for
+                Silicon) is applied across it and remain off during reverse bias condition.
+                
+                Applications of diode
+                >Power conversion (AC to DC)/ Rectification
+                >Clamping the voltage
+                >Zener diode as a voltage regulator
+                >Overvoltage protection
+                >ESD Protection
+                >Demodulation of Signals
+                
+                Type of diodes:
+                Rectifier diode
+                Switching diode
+                Light-emitting diode
+                Zener diode
+                Schottky diode
+                ESD diode
+                Tunnel diode
+                Varicap diode
+                Photodiode
+                The laser diode in optical communication
+                
+                Size of diode packages
+                Diodes are available in through-hole (DIP) and SMD versions.
+                E.g. DIP: DO214, SMA, TO- 220 with heatsink SMD 1206, 1210, SOD323, SOT23, TO-252, D2PAK,
+                
+                Diode selection parameters
+                While selecting a diode in any circuit users need to take care of the following parameters apart from the
+                application/usage.
+                Forward bias voltage
+                Maximum Forward current
+                Average forward current
+                Power dissipation
+                Reverse Breakdown voltage/Peak Inverse voltage
+                Max reverse current
+                Operating Junction temperature
+                Reverse recovery time
+                Size
+                Manufacturers: Rohm semiconductor, Diodes incorporated, On semi, Vishay.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                >Crystals::
+                The quartz crystal is made from a thin piece of quartz wafer. This wafer is made from Silicon material. The wafer is
+                tightly fitted and controlled between two parallel metalized surfaces which make an electrical connection. When an
+                external voltage is applied to the plates, the crystal vibrates with a certain fundamental frequency which creates
+                alternating waveform which swings between high and low levels. This phenomenon is known as the piezoelectric effect. Due
+                to this property, they are used in electronic circuits along with active components to create stable clock input to the
+                processor.
+                >Crystal application
+                Used in oscillator circuit to provide a clock input to the processor device
+                Source of reference signals for RF
+                
+                >Crystal selection parameter
+                Load capacitance
+                Fundamental frequency
+                Frequency tolerance
+                Frequency stability
+                ESR
+                Operating voltage
+                Manufacturers: NDK, Murata, Epson, ECS, CTS, Kyocera.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                Relays
+                A relay is an electromagnetic switch that opens and closes potential-free contacts. An electromechanical relay consists
+                of an armature, coil, spring, and contacts. When the voltage is applied to a coil, it generates a magnetic field. This
+                attracts the armature and causes a change in the open/closed state of the circuit. It is mainly used to control a high
+                powered circuit using a low power signal.
+                
+                There are mainly two types of relays based on constructions Electromechanical(EMR) and solid-state(SSR) relays.
+                A solid-state relay has a photodiode at its input side and a switching device such as transistor/FET at its output side.
+                When a specific voltage is applied at its input, Photodiode conducts and triggers the base of the transistor to cause
+                the switching. Due to its fast switching, miniaturized form factor, low voltage requirement, and eliminating the
+                mechanical arching, electrical noise, and contact bounce, it's widely used in applications compared to mechanical relay.
+                >Different types of relay form
+                Relays are categorized based on the poles and throws such as SPDT, SPST, DPST, DPDT.
+                
+                >Application
+                Controlling the high power circuit with isolated low power. E.g. Controlling 230V a.c. circuits with a +5V signal.
+                Switching voltage ON/OFF
+                Electrical MCB
+                Driving Diac/Triac circuits
+                
+                >Selection parameter for Relay:
+                Output load type - AC/DC
+                Input coil voltage for a mechanical relay
+                Photodiode voltage for SSR
+                Output switching voltage
+                Output current
+                On-State Resistance
+                Number of clicks/switching
+                Number of poles and contacts
+                Type of output contacts NC/NO Packages
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-white">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="index.html" class="text-white">Home</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="about.html" class="text-white">About Us</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="faq.html" class="text-white">FAQs</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="signin.html" class="text-white">Sign-in/Sign-up</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="freelance.html" class="text-white">Freelance Projects</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                            distinctio earum repellat quaerat voluptatibus placeat nam,
+                            commodi optio pariatur est quia magnam eum harum corrupti
+                            dicta, aliquam sequi voluptate quas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a href="https://www.facebook.com" target=" " class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" target=" " class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com" target=" " class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com" target=" " class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target=" " class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.github.com" target=" " class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center p-3">
+            © 2020 Copyright: <a target=" " class="text-white" href="https://github.com/OffsetThunder48">Team E-Junction</a>
+        </div>
+    </footer>
+</body>
+</html>
